@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <title>Vitrine de Medicamentos</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <div class="cadastro-farmacia" id="form-farmacia">
+    <div class="intro-cadastro">
+      <div class="cadastro-logo">
+        <img src="./assets/img/hospital-1_icon-icons.webp" alt="Logo da Farmácia Algoritmos>">
+        <h1>Farmácia Saúde e Vida</h1>
+      </div>
+
+      <div class="info-cadastro">
+        <h2>Seja Bem-vindo!</h2>
+        <h3>Espaço destinado ao gerenciamento e controle de estoque de medicamentos</h3>
+        <img src="./assets/img/pharma2.gif" alt="" style="width:150px;height:150px;">
+      </div>
+
+      <div class="cadastro-nav">
+        <h3><a href="login.html">Login</a></h3>
+      </div>
+
+    </div>
+
+    <div class="container-cadastro">
+      <form class="login-form">
+        <legend>Cadastro de medicamentos</legend>
+        <div>
+          <label for="url-medicamento">Imagem do medicamento:</label>
+          <input type="url" id="url-medicamento" required placeholder="Adicione o link da imagem do medicamento" />
+        </div>
+
+        <div>
+          <label for="nome-medicamento">Nome:</label>
+          <input type="text" id="nome-medicamento" required placeholder="Informe o nome do medicamento" />
+        </div>
+
+        <div>
+          <label for="laboratorio">Laboratório:</label>
+          <input type="text" id="laboratorio" required placeholder="Informe o nome do laboratório" />
+        </div>
+
+        <div>
+          <label for="valor">Preço:</label>
+          <input type="number" id="preco" required placeholder="Informe o preço do medicamento">
+        </div>
+
+        <div>
+          <label for="msg">Indicação:</label>
+          <textarea id="msg" name="msg" maxlength="60" placeholder="Informe as indicações do medicamento"></textarea>
+        </div>
+        <div class="button-cadastro">
+          <button type="submit">Cadastrar novo medicamento</button>
+          <button type="submit"><a href="listaMedicamento.html">Medicamentos cadastrados</a></button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+
+
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

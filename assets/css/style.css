@@ -1,0 +1,377 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #285619;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+nav img {
+  height: 40px;
+  margin-left: 10px;
+}
+
+nav h1 {
+  color: white;
+  margin: 0;
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  list-style: none;
+  padding: 15px;
+}
+
+nav a {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: red;
+}
+
+/* CADASTRO DE MEDICAMENTOS */
+.cadastro-farmacia {
+  display: flex;
+  min-height: 100%;
+}
+
+.intro-cadastro {
+  width: 40%;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: #17360c;
+}
+
+.info-cadastro h2 {
+  font-size: 30px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.info-cadastro h3 {
+  font-size: 22px;
+  color: #ffffff;
+  letter-spacing: 0.1em;
+  line-height: 30px;
+  margin: 40px;
+}
+
+.info-cadastro img {
+  display: block;
+  margin: 120px auto 0;
+}
+
+.cadastro-logo {
+  display: flex;
+  padding: 30px;
+}
+
+.cadastro-logo img {
+  height: 40px;
+  margin: 0 10px;
+}
+
+.cadastro-logo h1 {
+  color: #ffffff;
+}
+
+.cadastro-nav {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.cadastro-nav a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.cadastro-nav a:hover {
+  color: rgb(171, 20, 20);
+}
+
+.container-cadastro {
+  width: 40%;
+  height: 580px;
+  padding: 40px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  margin: auto;
+}
+
+.login-form label {
+  display: flex;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.login-form legend {
+  color: #285619;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.login-form input,
+.login-form textarea {
+  outline-color: #4ca21d;
+  background: #f2f2f2;
+  width: 100%;
+  border: none;
+  padding: 8px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  resize: vertical;
+  font-family: Arial, sans-serif;
+}
+
+.button-cadastro {
+  display: flex;
+  justify-content: space-around;
+}
+
+.login-form button:first-child,
+.login-form button:nth-child(2) {
+  text-transform: uppercase;
+  background: #285619;
+  border: none;
+  padding: 10px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.login-form button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.login-form button:hover {
+  background: #4ca21d;
+}
+
+/* LOGIN/CADASTRO */
+.formulario-login {
+  max-width: 50%;
+  height: auto;
+  margin: 60px auto;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.formulario-login h2 {
+  color: #285619;
+  font-size: 26px;
+}
+
+.formulario-login p {
+  color: #808080;
+  margin-bottom: 15px;
+}
+
+.formulario-login input {
+  outline-color: #4ca21d;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  font-size: 20px;
+}
+
+.formulario-login button {
+  text-transform: uppercase;
+  background: #285619;
+  width: 100%;
+  border: none;
+  padding: 15px;
+  color: #fff;
+  font-size: 18px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.formulario-login button:hover {
+  background: #4ca21d;
+}
+
+.formulario-login .message {
+  margin: 15px 0 0;
+  color: #808080;
+  font-size: 14px;
+}
+
+.formulario-login .message a {
+  color: #285619;
+  text-decoration: none;
+}
+
+.formulario-login:before,
+.formulario-login:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* LISTAGEM DE MEDICAMENTOS */
+.container-listagem {
+  width: 90%;
+  margin: 0 auto;
+}
+.container-listagem h1 {
+  text-align: center;
+  margin: 50px 0;
+}
+
+#lista-medicamentos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#lista-medicamentos img,
+button {
+  display: block;
+  margin: 10px auto;
+}
+
+#lista-medicamentos h2 {
+  text-align: center;
+}
+
+#lista-medicamentos button {
+  padding: 5px;
+  background-color: #285619;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+}
+
+#lista-medicamentos button:hover {
+  background-color: #4ca21d;
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 15px 15px;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav img {
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  nav h1 {
+    font-size: 18px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .cadastro-farmacia {
+    display: block;
+  }
+
+  .intro-cadastro {
+    width: 100%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #17360c;
+  }
+
+  .container-cadastro {
+    width: 90%;
+    height: 550px;
+    margin: 40px auto;
+  }
+
+  .info-cadastro img {
+    margin-top: 80px;
+  }
+
+  /* LOGIN */
+  .formulario-login {
+    max-width: 90%;
+  }
+
+  .login-form button:first-child,
+  .login-form button:nth-child(2) {
+    padding: 5px;
+    width: 40%;
+  }
+
+  .formulario-login {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    padding: 15px;
+  }
+
+  nav img {
+    height: 20px;
+  }
+
+  nav h1 {
+    font-size: 12px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  .login-form input,
+  .login-form textarea {
+    padding: 8px;
+    margin-bottom: 5px;
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  /* LOGIN */
+  .formulario-login {
+    max-width: 90%;
+  }
+
+  #lista-medicamentos h1 {
+    font-size: 26px;
+  }
+}
